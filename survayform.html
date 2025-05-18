@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id = "title">Anime Survay Form</h1>
+    <p id = "description">This is a survay form to ask you some questions about anime and what you like in anime.</p>
+
+    <form id = "survey-form">
+      <fieldset>
+        <legend>User Information</legend>
+      <label id = "name-label" for ="name">Enter your name: </label>
+      <input required id = "name" type = "text" placeholder = "Ex. Joe Mama">
+      </fieldset>
+      <fieldset>
+
+      <label id = "email-label" for = "email">Enter email: </label>
+      <input required id = "email" type =  "email" placeholder = "example@gmail.com">
+      </fieldset>
+
+      <fieldset>
+
+      <label id = "number-label" for = "number">If you ever wanted to be a number from 1 to 100 what number would you be: </label>
+      <input type = "number" id = "number" max = "100" min = "1" placeholder = "Ex: 69"/>
+
+      </fieldset>
+      <fieldset>
+        <label for  ="dropdown">Out of the 3 good New anime this season what anime did you like the most?</label>
+        <select id = "dropdown">
+          <option>To be Hero X</option>
+          <option>Lazarus</option>
+          <option>Witch Watch</option>
+
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for = "YorN">Do you watch anime every season?</label>
+
+        <label for = "yes">Yes</label>
+        <input type = "radio" name = "yesorno" type = "yes" id = "yes" value = "yes">
+
+        <label for = "no">No</label>
+        <input type = "radio" name = "yesorno" type = "no" id = "no" value = "no">
+      </fieldset>
+
+      <fieldset>
+        <legend>Where did you hear about this survay from?</legend>
+
+        <label for = "social">Social Media</label>
+        <input type = "checkbox" id = "social" name = "socialmedia" value = "socialmedia">
+        <label for "mouth">Word of mouth</label>
+        <input 
+        id = "mouth" 
+        type = "checkbox"
+        value = "mouth">
+        <label for = "Anix">AnimeExpo</label>
+        <input id = "Anix"
+        type = "checkbox"
+        value = "animeexpo">
+
+        </fieldset>
+
+        <fieldset>
+          <label for = "additioninfo">Anime thing you want to add?</label>
+          <textarea cols = "100%" rows = "4" type = "text"></textarea>
+        </fieldset>
+
+        <button type = "submit" id = "submit">Submit</button>
+
+
+
+    </form>
+  </body>
+</html>
